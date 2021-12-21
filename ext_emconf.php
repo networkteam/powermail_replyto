@@ -10,7 +10,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'networkteam GmbH',
     'constraints' => [
         'depends' => [
-            'powermail' => '7.4.3-8.99.99'
+            'powermail' => '8.4.1-8.99.99'
         ],
         'conflicts' => [
         ],

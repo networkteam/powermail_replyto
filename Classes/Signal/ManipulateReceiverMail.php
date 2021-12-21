@@ -13,7 +13,7 @@ class ManipulateReceiverMail
     public function moveSenderToReplyTo(MailMessage $mailMessage, array $email, SendMailService $sendMailService)
     {
         if ($sendMailService->getType() === 'receiver') {
-            TypoScriptUtility::overwriteValueFromTypoScript($overwrittenSender, $sendMailService->getOverwriteConfig(), 'senderEmail');
+            $overwrittenSender = TypoScriptUtility::overwriteValueFromTypoScript('', $sendMailService->getOverwriteConfig(), 'senderEmail');
 
             if (!GeneralUtility::validEmail($overwrittenSender)) {
                 $mailMessage
