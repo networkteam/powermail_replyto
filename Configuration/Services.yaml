@@ -1,0 +1,7 @@
+services:
+  Networkteam\PowermailReplyTo\EventListener\ManipulateReceiverMail:
+    tags:
+      - name: event.listener
+        identifier: 'powermail-replyto/manipulate-receiver-mail'
+        method: 'moveSenderToReplyTo'
+        event: In2code\Powermail\Events\SendMailServicePrepareAndSendEvent
