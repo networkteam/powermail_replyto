@@ -2,7 +2,7 @@
   "name": "networkteam/powermail-replyto",
   "type": "typo3-cms-extension",
   "require": {
-    "in2code/powermail": "^11.0 || dev-*"
+    "in2code/powermail": "*"
   },
   "autoload": {
     "psr-4": {
